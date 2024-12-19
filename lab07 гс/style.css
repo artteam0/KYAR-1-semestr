@@ -1,0 +1,17 @@
+.gallery {
+    text-align: center; 
+    perspective: 800px; 
+   }
+   .left {
+    transform: rotateY(-60deg); 
+    transform-origin: right center; 
+   }
+   .right {
+    transform: rotateY(60deg); 
+    transform-origin: left center; 
+   }
+   .up {
+    transform: rotateX(55deg);
+    transform-origin: center;
+   }
+   .upp{}

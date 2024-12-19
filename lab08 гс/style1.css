@@ -1,0 +1,13 @@
+.b1:link {
+    color: red;
+}
+a {text-decoration: none;}
+.b2:visited {
+    color: #8B0000;
+}
+.b3:hover {
+    color: green;
+}
+.b4:active {
+    color: rgb(184, 134, 11);
+}

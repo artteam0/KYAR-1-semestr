@@ -1,0 +1,46 @@
+div {
+    border: 2px solid black;
+}
+
+.grid {
+    border: 0px;
+    display:grid;
+    grid-template-areas: 
+    "b b b"
+    "a e c"
+    "d d d";
+    grid-template-columns: 
+    200px 739px 449px;
+    grid-template-rows: 
+    75px 606px 75px;
+    grid-gap: 15px;
+
+}
+
+.H:link {
+    color: black;
+}
+.H:hover {
+    color: red;
+}
+.C:link {
+    color: black;
+}
+.C:hover {
+    color: green;
+}
+.G:link {
+    color: black;
+}
+.G:hover {
+    color: blue;
+}
+button {
+    padding-top: 2px;
+    width: 197px;
+    height: 54.82px;
+}
+
+.Head {
+    color: black;
+}

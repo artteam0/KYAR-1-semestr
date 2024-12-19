@@ -1,0 +1,16 @@
+.a {
+    border: 2px solid black;;
+}
+
+.grid {
+    border: none;
+    display: grid;
+    grid-template-areas: 
+    
+    "a b c"
+    "a b c"
+    ;
+    grid-template-rows: 390px 390px 390px;
+    grid-template-columns: 147px 625px 615px;
+    grid-gap: 15px;
+}

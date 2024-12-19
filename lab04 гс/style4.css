@@ -1,0 +1,10 @@
+.a {border: groove; border-left-color: brown;  border-bottom-color: yellow; border-right-color: navy; border-top-color: orange;}
+.s {border-left: solid; border-right: solid; border-color: #007BA7;}
+.d {border-top: groove; border-top-color: rgb(229, 43, 80); border-right: dashed; border-bottom: dashed; border-right-color: blue; border-bottom-color: blue; border-left: dashed; border-left-color: blue;}
+.f {border: dotted; border-color: orange; border-width: 1px;}
+.g {border-top: groove; border-bottom: groove; border-bottom-color: navy; border-top-color: navy; border-top-width: 2px; border-bottom-width: 2px; border-left: dashed; border-left-color: darkred; border-right: dashed; border-right-color: darkred;}
+.h {border: double; border-color: #B3446C;}
+.j {border-top: dashed; border-top-color: #808000; border-top-width: 1px; border-bottom: groove; border-bottom-color: #FF7518; border-bottom-width: 3px;}
+.k {border-left: double; border-bottom: double; border-color: #CC7722;}
+.l {border-right: ridge; border-top: ridge; border-color: #B5A642;}
+.m {border-left: dashed; border-right: dashed; border-bottom: dashed; border-width: 5px; border-color: rgb(0, 40, 0);}

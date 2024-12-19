@@ -1,0 +1,18 @@
+div{
+    border:2px black solid;
+}
+
+.grid {
+    border: 0px;
+    display: grid;
+    grid-template-areas:
+    "a b c"
+    "a b c"
+    "a d c"
+    "a d c"
+    ;
+    grid-template-rows: 190px 190px 190px 190px; 
+    grid-template-columns: 624px 624px 139px;
+    grid-gap:15px;
+}
+

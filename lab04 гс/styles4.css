@@ -1,0 +1,10 @@
+#r {border-style: outset; border-color: rgb(255, 0, 0); border-width: 5px;}
+#g {border-style: dashed; border-color: rgb(0, 225, 0); border-width: 5px;}
+#b {border-style: dotted; border-color: rgb(0, 0, 225); border-width: 5px;}
+#c {border-style: double; border-color: rgb(0, 225, 225); border-width: 5px;}
+#m {border-style: ridge; border-color: rgb(225, 0, 225); border-width: 5px;}
+#y {border-style: inset; border-color: rgb(225, 225, 0); border-width: 5px;}
+#k {border-style: solid; border-color: rgb(0, 0, 0); border-width: 5px;}
+.one {width: 400px; text-align: center; border-style: solid; border-color: #ff7f50;}
+.two {border-style: solid; border-color: red; border-width: 5px; border-radius: 20px/40px; box-shadow: inset 2px -2px 8px 8px rgba(0, 0, 0, .5); overflow: auto;}
+.three {border-style: solid; border-color: #FF6347;}

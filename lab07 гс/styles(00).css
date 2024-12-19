@@ -1,0 +1,160 @@
+.div1:hover{ 
+    transform: scale(0.5); 
+} 
+.div2:hover{ 
+    transform: rotate(45deg); 
+} 
+.div3:hover{ 
+    transform: translate(50px); 
+} 
+.div4:hover{ 
+    transform:  skew(-20deg); 
+} 
+.img1{ 
+    transform: perspective(44vw) rotateX(35deg); 
+} 
+.img2{ 
+    transform: perspective(44vw) rotateY(40deg); 
+} 
+.img3{ 
+    transform: perspective(44vw) rotateX(45deg); 
+} 
+.img4{ 
+    transform: perspective(44vw) rotateY(-40deg); 
+} 
+div {display: inline-block;} 
+button{ 
+    margin: 30px; 
+    height: 30px; 
+    width: 100px; 
+} 
+.b1:hover{ 
+   background-color: black; 
+   color: white; 
+} 
+.b2:hover{ 
+   outline:3px solid yellow; 
+   border: 3px solid red; 
+} 
+.b3:hover{ 
+   border-top: 3px solid green; 
+   border-bottom: 3px solid green; 
+   border-left: none; 
+   border-right: none; 
+} 
+.b4:hover{ 
+    border-top: none; 
+   border-bottom: none; 
+   border-left: 3px solid blue; 
+   border-right: 3px solid blue; 
+} 
+.b5:hover{ 
+   background-image: radial-gradient(yellow 5%, orange 20% 30%, magenta 40% 55%, blue 65% 70%, aqua 75% 95%); 
+   border: none; 
+} 
+@keyframes anime1{ 
+  0%{left: 0px; transform: perspective(44vw) rotateY(40deg);} 
+  50%{left: 670px} 
+  100%{left:0px} 
+} 
+.div41{ 
+    position:relative; 
+    animation: anime1 5s; 
+} 
+@keyframes anime2{ 
+  0%{left: -220px; transform: perspective(44vw) rotateY(40deg);} 
+  50%{left: 440px} 
+  100%{left: 0px; filter: blur(10px);} 
+} 
+.div42{ 
+    position: relative; 
+    animation: anime2 5s; 
+} 
+@keyframes anime3{ 
+  0%{left: -450px; transform: perspective(44vw) rotateY(40deg);} 
+  50%{left: 220px} 
+  100%{left: 0px; filter: grayscale(1);} 
+} 
+.div43{ 
+    position: relative; 
+    animation: anime3 5s; 
+} 
+@keyframes anime4{ 
+  0%{left: -670px; transform: perspective(44vw) rotateY(40deg);} 
+  50%{left: 0px} 
+  100%{left: 0px; filter: invert(1 );} 
+} 
+.div44{ 
+    position: relative; 
+    animation: anime4 5s; 
+} 
+.auto{ 
+    border: 5px solid black; 
+} 
+.smena {left: 0px;} 
+.image {left: 0px; 
+    width: 200px; 
+    height: 200px; 
+    border: 2px solid red; 
+    background-image: url('sigma.jpg'); 
+    animation: anim1 5s linear infinite; 
+     
+} 
+@keyframes anim1 { 
+    0% { 
+        background-image: url('bmw.jfif'); 
+      } 
+      20% { 
+        background-image: url('mercedes.jfif'); 
+      } 
+      40% { 
+        background-image: url('volvo.jfif'); 
+      } 
+      60% { 
+        background-image: url('wv.jfif'); 
+      } 
+      80% { 
+        background-image: url('https://i.ytimg.com/vi/xQUP3UHJBug/maxresdefault.jpg'); 
+      } 
+      100% { 
+        background-image: url('bmw.jfif'); 
+      } 
+} 
+ 
+ 
+ 
+ 
+ 
+.div51 {position: relative; animation: name51 4s linear infinite;} 
+@keyframes name51 { 
+0% {left: 0px;} 
+50% {left: 500px;} 
+100%{left:0px;} 
+} 
+ 
+.div52 {position: relative; animation: name52 5s linear infinite; margin-top: 20px;} 
+@keyframes name52 { 
+    0% {left: 0px;}
+    25% {clip-path: circle(80%); left: 250px;} 
+    50% {clip-path: circle(50%);left: 500px;} 
+    75%{clip-path: circle(80%); left: 250px;} 
+    100%{left: 0px;} 
+} 
+ 
+.div53 { position: absolute; 
+animation: name53 5s linear infinite; margin-top: 20px;} 
+@keyframes name53 { 
+    0% {left: -100%;} 
+    100% {left: 100%;} 
+} 
+ 
+ 
+.div54 {position: relative; animation: name54 3s linear infinite;margin-top: 200px;} 
+@keyframes name54 { 
+    0% {top: 0px;} 
+    50%{top: -50px; width: 100px; height: 100px;} 
+    100%{top:0px;width: 100px; height: 100px;} 
+} 
+.div55 {position: relative; animation: name55 5s linear infinite;margin-top: 50px;}
+
+.nav li {display: inline;;}
