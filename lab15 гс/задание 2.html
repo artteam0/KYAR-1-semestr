@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body
+        {
+            text-align: center;
+        }
+        footer
+        {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height :40px;
+            background-color: lightgreen;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 Style="padding-right:140px;"> Данные студента </h1>
+<p>
+    <label> Имя студента</label> 
+    <input placeholder="*Обязательно*" id="I"></input> 
+</p>
+
+<p>
+    <label style="position: relative;right:17px"> Отчество студента </label>
+    <input placeholder="*Обязательно*" style="position: relative;right:17px" id="II"></input> 
+</p>
+
+<p>
+    <label style="position: relative;right: 15px"> Фамилия студента</label> 
+    <input placeholder="*Обязательно*" style="position: relative;right: 15px" id="III"></input> 
+</p>
+
+<p>
+    <label style="position: relative;right:10px">Адрес почты </label> 
+    <input  style="position: relative;right:-3px" id="IV"></input> 
+</p>
+
+<p>
+    <label style="position: relative;right:20px"> Контакный номер</label> 
+    <input style="position: relative;right:15px" id="V"></input> 
+</p>
+
+<p>
+    <label style="position: relative;right:190px">Какую социальную<br>сеть вы используете?</label> 
+</p> 
+
+<input type="checkbox"style="position: relative;bottom:50px" onclick="vk();"></input>
+<label style="position: relative;bottom:50px" id="haha" value="Vk">Vk</label>
+
+<input type="checkbox"style="position: relative;bottom:50px" onclick="insta();"></input>
+<label style="position: relative;bottom:50px" id="haha" value="Instagram">Instagram</label>
+
+<input type="checkbox"style="position: relative;bottom:50px" onclick="telega();"></input>
+<label style="position: relative;bottom:50px" id="haha" value="Telegram ">Telegram</label>
+
+
+<p></p>
+ <b>Факультет:</b> 
+   <select id="VI">
+    <option>ЛХФ</option>
+    <option>ЛиД</option>
+    <option>ТОВ</option>
+    <option>ХТиТ</option>
+    <option>ПиМ</option>
+    <option>ИЭФ</option>
+    <option>ФИТ</option>
+</select>
+
+<b>Курс:</b> 
+<select id="VII">
+ <option>1 курс</option>
+ <option>2 курс</option>
+ <option>2 курс</option>
+ <option>3 курс</option>
+ <option>4 курс</option>
+ <option>5 курс</option>
+</select>
+
+<b>Группа:</b> 
+<select id="VIII">
+ <option>1</option>
+ <option>2</option>
+ <option>3</option>
+ <option>4</option>
+ <option>5</option>
+ <option>6</option>
+ <option>7</option>
+ <option>8</option>
+ <option>9</option>
+ <option>10</option>
+</select>
+
+        <p style="padding-right:280px;"><button type="submit" id="button">Отправить</button></p>
+
+        <footer id="footer">
+
+        </footer>
+        <script>
+
+            let button=document.getElementById('button');
+let footer=document.getElementById('footer');
+let choose='';
+function vk()
+{
+    choose=choose+' социальная сеть - Vk ';
+}
+function insta()
+{
+    choose=choose+' социальная сеть - Instagram ';
+}
+function telega()
+{
+    choose=choose+' социальная сеть - Telegram ';
+}
+button.onclick=function()
+{
+   let text=document.getElementById('III').value;
+footer.innerText=text;
+let text2=document.getElementById('I').value;
+footer.innerText=footer.innerText+' '+text2;
+let text3=document.getElementById('II').value;
+footer.innerText=footer.innerText+' '+text3;
+let text4=document.getElementById('IV').value;
+footer.innerText=footer.innerText+' '+text4;
+let text5=document.getElementById('V').value;
+footer.innerText=footer.innerText+' '+text5;
+let text6=document.getElementById('VI').value;
+footer.innerText=footer.innerText+' '+text6;
+let text7=document.getElementById('VII').value;
+footer.innerText=footer.innerText+' '+text7;
+let text8=document.getElementById('VIII').value;
+footer.innerText=footer.innerText+' группа '+text8;
+footer.innerText=footer.innerText+choose;
+
+}
+        </script>
+</body>
+</html>

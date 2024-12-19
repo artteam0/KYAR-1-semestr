@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея</title>
+    <style>
+        .photogallery {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container {
+            position: relative;
+            cursor: pointer;
+            max-width: 200px;
+            height: 200px;
+        }
+
+        .photo {
+            height: 200px;
+            width: 200px;
+            border: 0;
+            transition: transform 0.2s;
+        }
+
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .border {
+            border: 10px solid red;
+        }
+
+        #imageContainer {
+            display: flex;
+        }
+
+        .hover-image {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="photogallery">
+        <div class="container" onmouseover="showDescription(1)" onmouseout="hideDescription(1)">
+            <img src="иван.jpg" alt="Photo 1" class="photo" id="photo1">
+            <div class="description" id="desc1">
+                !ВНИМАНИЕ! ИВАН
+            </div>
+        </div>
+        <div class="container" onclick="showBorder(2)">
+            <img src="саймамбек.jpg" alt="Photo 2" class="photo" id="photo2">
+
+        </div>
+        <div class="container" onmouseout="hideDescription(3)">
+            <img src="хайфэшн.jpg" alt="Photo 3" class="photo" id="photo3">
+
+        </div>
+        <div class="photo-container" onmouseover="showDescription(4)" onmouseout="hideDescription(4)"
+            onclick="toggleImage()">
+            <img src="иван.jpg"  class="hover-image" id="image4">
+    
+        </div>
+    </div>
+
+    <script>
+        function showDescription(photoNumber) {
+            const description = document.getElementById(`desc${photoNumber}`);
+            description.style.opacity = 1;
+        }
+
+        function hideDescription(photoNumber) {
+            const description = document.getElementById(`desc${photoNumber}`);
+            description.style.opacity = 0;
+        }
+
+        function showBorder(photoNumber) {
+            
+            const selectedPhoto = document.getElementById(`photo${photoNumber}`);
+            selectedPhoto.classList.add("border");
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var lastImage = document.getElementById("image4");
+
+            lastImage.addEventListener("mouseenter", function () {
+                lastImage.src = "сигма1.jpg"; 
+            });
+
+            lastImage.addEventListener("mouseleave", function () {
+                lastImage.src = "иван.jpg";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

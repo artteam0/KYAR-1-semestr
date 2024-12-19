@@ -1,0 +1,18 @@
+* {
+  font-family: Arial;
+}
+
+p {
+  color: blue;
+}
+
+p {
+  text-align: center;
+}
+
+#table th, #table td {
+  border-width: 1px;
+  border-style: groove;
+  border-width: 1px;
+  padding: 8px;
+}/*# sourceMappingURL=Задание 6.css.map */

@@ -1,0 +1,25 @@
+*{
+    font-family: Arial;
+}
+p {
+    color: blue;
+}
+%center{
+    text-align: center;
+}
+p {
+    @extend %center;
+}
+%table{
+    border-width:1px;
+    border-style:groove;
+    border-width:1px;
+    padding: 8px; 
+}
+  #table td{
+    @extend %table;
+  }
+   #table th {
+    @extend %table;
+ }
+
