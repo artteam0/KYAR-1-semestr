@@ -1,0 +1,90 @@
+$wall: black;
+$firstvar: blue;
+$secondvar: red;
+
+.logotype{
+    img{
+        height: 100%;   
+        border: none;
+    }
+}
+
+.header{
+    height: 15%;
+    padding: 10px;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 25% 75% ;
+    grid-template-rows: 15vh;
+
+}
+
+@mixin border{
+    border:1px solid black;
+}
+.header{
+    @include border;
+} 
+.logotype{
+    @include border;
+} 
+.link{
+    @include border;    
+}
+
+
+%shablon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.logotype
+{
+    @extend %shablon;
+}
+
+.nav{
+    @extend %shablon;
+}
+
+$base-font-size: 15px;
+
+@function calculate-font-size($size) {
+  @return $size * 1rem;
+}
+
+h1 {
+  font-size: calculate-font-size(2);
+}
+
+p {
+  font-size: calculate-font-size(1);
+}
+
+
+@mixin link($margin){
+    @if ($margin>=5%)
+    {   margin: $margin;
+        padding:1%;}
+    @else{  margin: $margin; 
+            padding:0;}
+}
+.link{
+    @include link(5%)
+
+}
+
+@function is-even($number) {
+    @return $number % 2 == 0;
+  }
+  
+
+  $myNumber: 10px;
+  
+  body {
+    font-size: if(is-even($myNumber), 20px, 10px); 
+    color: if(is-even($myNumber), $firstvar, $secondvar);
+  }
+  

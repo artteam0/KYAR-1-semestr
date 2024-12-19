@@ -1,0 +1,20 @@
+paragraph {
+    display: table-cell;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+Kia {
+    font-size: 30px;
+    font-weight: bold;
+}
+block {
+    margin-left: 20px;
+    
+}
+who {
+    text-align: center;
+}
+whom {
+    font-weight: bold;
+}
